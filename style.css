@@ -102,20 +102,19 @@ h1, h2{
     color: white;
     margin-left: 10px;
 }
-
-.general{
-    padding: 10px 12px;
+.services .pricing{
+    margin: 8px;
 }
-
-.services{
-    
+.container{
+    display: block;
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+    padding: 20px;
+    Line-height: 1.5;
 }
-nav h2{
-    font-size: 1.5em;
-
-}
-h2{font-size: 2em ;
-
+h2{
+    font-size: 2em ;
 }
 h3{
     color: #e9bb57;
@@ -130,25 +129,71 @@ h4{
     padding: 10px;
 }
 img{
-    padding: 10px;
+    padding: 4px;
 
 }
-.container{
+
+.choose, .take{
+    background-color: #d9526f;
+    padding: 15px 8px 8px;
+}
+
+.choose ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 5px;
+}
+
+.choose li{
     display: block;
-    background-color: white;
-    margin: 0 auto; 
-    border-radius: 20px;
-    margin-bottom: 10px;
-    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 40px 20px;
+}
+
+.choose li:nth-child(1) {
+    background-color: #4ca7c0; 
+}
+
+.choose li:nth-child(2) {
+    background-color: #6b8fe7;
+}
+
+.choose li:nth-child(3) {
+    background-color: #e9bb57; 
+}
+
+.choose li:nth-child(4) {
+    background-color: #fff; 
+}
+.pricing{
+    padding: 20px 8px 8px;
 }
 table{
     background-color: #e9bb57;
     margin: 0 auto;
-
+}
+table, th, td{
+    border: 2px solid #e9bb57;
+}
+th{
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 td{
     background-color: white;
-    text-align: center;
-    
+    text-align: left;
+    padding: 15px;
 }
-    
+
+.take p{
+    color: white;
+    line-height: 1.5;
+    padding: 8px 10px;
+}
+
