@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
 /* CSS reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,7 +27,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -46,19 +50,34 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*root variables*/
+:root{
+    --teal: #4ca7c0;
+    --purple: #484fb7;
+    --lavender: #6b8fe7;
+    --yellow: #e9bb57;
+    --pink: #d9526f;
+    --dk-gray: #1e1e1e;
+    --white: #ffffff;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
 body {
     font-family: 'inter', sans-serif;
     margin: 0 auto; /* centers it */
-    background-color: #6b8fe7;
+    background-color: var(--lavender);
     width: 100%;
     max-width: 450px;
 }
 header, main, footer{
-    background-color: #484fb7 ;
+    background-color: var(--purple) ;
 }
+
+/* header styles*/
 header{
     text-align: center;
-    color: white;
+    color: var(--white);
     padding: 40px 20px;
 }
 header p {
@@ -84,8 +103,8 @@ h1{
 }
 .menu a {
     display: block;
-    background-color: white;
-    color: #484fb7;
+    background-color: var(--white);
+    color: var(--purple);
     padding: 15px 20px;
     margin: 10px 20px ;
     text-decoration: none;
@@ -97,9 +116,11 @@ h1{
 p{
     padding-left: 10px;
 }
+
+/* styles for h1, h2 tags*/ 
 h1, h2{
     font-family: 'kavoon', cursive;
-    color: white;
+    color: var(--white);
     margin-left: 10px;
 }
 .services .pricing{
@@ -107,7 +128,7 @@ h1, h2{
 }
 .container{
     display: block;
-    background-color: white;
+    background-color: var(--white);
     margin: 15px;
     border-radius: 20px;
     padding: 20px;
@@ -117,7 +138,7 @@ h2{
     font-size: 2em ;
 }
 h3{
-    color: #e9bb57;
+    color: var(--yellow);
     font-size: 1.5em;
     font-weight: bold;
     margin: 10px;
@@ -125,7 +146,7 @@ h3{
 
 h4{
     font-size: 1.15em;
-    color:#484fb7;
+    color: var(--purple);
     padding: 10px;
 }
 img{
@@ -134,10 +155,11 @@ img{
 }
 
 .choose, .take{
-    background-color: #d9526f;
+    background-color: var(--pink);
     padding: 15px 8px 8px;
 }
 
+/*choose section styles*/
 .choose ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -156,29 +178,31 @@ img{
 }
 
 .choose li:nth-child(1) {
-    background-color: #4ca7c0; 
+    background-color: var(--teal); 
 }
 
 .choose li:nth-child(2) {
-    background-color: #6b8fe7;
+    background-color: var(--lavender);
 }
 
 .choose li:nth-child(3) {
-    background-color: #e9bb57; 
+    background-color: var(--yellow); 
 }
 
 .choose li:nth-child(4) {
-    background-color: #fff; 
+    background-color: var(--white); 
 }
 .pricing{
     padding: 20px 8px 8px;
 }
+
+/* style for the tables*/
 table{
-    background-color: #e9bb57;
+    background-color: var(--yellow);
     margin: 0 auto;
 }
 table, th, td{
-    border: 2px solid #e9bb57;
+    border: 2px solid var(--yellow);
 }
 th{
     padding: 15px;
@@ -186,13 +210,13 @@ th{
     text-transform: uppercase;
 }
 td{
-    background-color: white;
+    background-color: var(--white);
     text-align: left;
     padding: 15px;
 }
 
 .take p{
-    color: white;
+    color: var(--white);
     line-height: 1.5;
     padding: 8px 10px;
 }
@@ -201,15 +225,16 @@ td{
     display: block;               
     margin: 10px auto;            
     padding: 25px 130px;           
-    background-color: #ffffff;    
+    background-color: var(--white);    
     font-weight: bold;
     font-size: 15px;
     text-transform: uppercase;
     border: none;                 
     border-radius: 18px;          
-    box-shadow: 6px 6px 0 black
+    box-shadow: 6px 6px 0 var(--dk-gray);
 }
 
+/*footer style*/
 footer{
     display: flex;
     justify-content: space-between; 
@@ -217,8 +242,9 @@ footer{
     gap: 8px;  
     font-size: 12px;
     font-weight: bold;
-    color: white;
+    color: var(--white);
     padding: 50px 80px;
     text-align: center;
+    margin-bottom: 50px;
   }
   footer a{ color: var(--white); opacity: .9; text-decoration: underline; }
