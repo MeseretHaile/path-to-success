@@ -197,3 +197,28 @@ td{
     padding: 8px 10px;
 }
 
+.schedule {
+    display: block;               
+    margin: 10px auto;            
+    padding: 25px 130px;           
+    background-color: #ffffff;    
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;                 
+    border-radius: 18px;          
+    box-shadow: 6px 6px 0 black
+}
+
+footer{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 8px;  
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    padding: 50px 80px;
+    text-align: center;
+  }
+  footer a{ color: var(--white); opacity: .9; text-decoration: underline; }
