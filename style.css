@@ -46,91 +46,109 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-    body {
-        font-family: 'inter', sans-serif;
-        margin: 0 auto; /* centers it */
-        background-color: #6b8fe7;
-        padding: 20px;
-    }
-    header, main, footer{
-        width: 100%;
-        max-width: 450px;
-        margin: 0 auto; /* centers it */
-        background-color: #484fb7 ;
-    }
-    header{
-        text-align: center;
-        color: white;
-        padding: 30px 0;
-       
-    }
-    .menu{
-        background-color: #e9bb57;
-        text-align: center;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-    }
-    .menu a {
-        display: block;
-        background-color: white;
-        color: #484fb7;
-        padding: 15px 20px;
-        margin: 20px ;
-        text-decoration: none;
-        text-align: center;
-        font-weight: bold;
-       }
-       p{
-        padding-left: 10px;
-       }
-    h1, h2{
-        font-family: 'kavoon', cursive;
-        color: white;
-        margin-left: 10px;
+body {
+    font-family: 'inter', sans-serif;
+    margin: 0 auto; /* centers it */
+    background-color: #6b8fe7;
+    width: 100%;
+    max-width: 450px;
+}
+header, main, footer{
+    background-color: #484fb7 ;
+}
+header{
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+header p {
+    font-style: italic;
+}
+h1{
+    font-size: 3em;
+    padding-bottom: 10px;
+}
+.menu{
+    background-color: #e9bb57;
+    text-align: center;
+    padding: 5px 0px;
+    margin-bottom: 10px;
+}
+.menu h3 {
+    color: black;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.menu ul {
+    margin-bottom: 20px;
+}
+.menu a {
+    display: block;
+    background-color: white;
+    color: #484fb7;
+    padding: 15px 20px;
+    margin: 10px 20px ;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
-    }
-    h1{
-        font-size: 3em;
-    }
-    nav h2{
-        font-size: 1.5em;
+p{
+    padding-left: 10px;
+}
+h1, h2{
+    font-family: 'kavoon', cursive;
+    color: white;
+    margin-left: 10px;
+}
 
-    }
-    h2{font-size: 2em ;
+.general{
+    padding: 10px 12px;
+}
+
+.services{
     
-    }
-    h3{
-        color: #e9bb57;
-        font-size: 1.5em;
-        font-weight: bold;
-        margin: 10px;
-    }
+}
+nav h2{
+    font-size: 1.5em;
+
+}
+h2{font-size: 2em ;
+
+}
+h3{
+    color: #e9bb57;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px;
+}
+
+h4{
+    font-size: 1.15em;
+    color:#484fb7;
+    padding: 10px;
+}
+img{
+    padding: 10px;
+
+}
+.container{
+    display: block;
+    background-color: white;
+    margin: 0 auto; 
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+table{
+    background-color: #e9bb57;
+    margin: 0 auto;
+
+}
+td{
+    background-color: white;
+    text-align: center;
     
-    h4{
-        font-size: 1.15em;
-        color:#484fb7;
-        padding: 10px;
-    }
-    img{padding: 10px;
-
-    }
-    .container{
-        display: block;
-        background-color: white;
-        width: 400px;
-        margin: 0 auto; 
-        border-radius: 20px;
-        margin-bottom: 10px;
-        padding: 10px;
-    }
-    table{
-        background-color: #e9bb57;
-        margin: 0 auto;
-
-    }
-    td{
-        background-color: white;
-        text-align: center;
-        
-    }
+}
     
